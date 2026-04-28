@@ -159,3 +159,4 @@ D:\BaiTH3\backend\obj\Debug\net10.0\ref\backend.dll
 D:\BaiTH3\backend\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\BaiTH3\backend\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\BaiTH3\backend\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\BaiTH3\backend\obj\Debug\net10.0\backend.sourcelink.json

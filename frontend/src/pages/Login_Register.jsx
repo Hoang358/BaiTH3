@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import "../styles/Login_Register.css";
 import { useNavigate } from "react-router-dom";
-// Import service đã tạo để gọi API
 import accountService from "../api/accountService";
 
 function Login({ onSwitch }) {
@@ -13,7 +12,7 @@ function Login({ onSwitch }) {
     };
 
     const handleSubmit = async (e) => {
-        e.preventDefault(); // Chặn load lại trang
+        e.preventDefault(); 
         try {
             // Gửi request LOGIN đến backend
             const response = await accountService.login(formData);
@@ -24,7 +23,6 @@ function Login({ onSwitch }) {
             alert("Đăng nhập thành công!");
             navigate("/UserPage");
         } catch (error) {
-            // Hiển thị lỗi từ backend (ví dụ: Sai mật khẩu)
             alert(error.response?.data || "Đăng nhập thất bại. Vui lòng kiểm tra lại!");
         }
     };

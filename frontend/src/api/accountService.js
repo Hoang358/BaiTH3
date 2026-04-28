@@ -10,5 +10,5 @@ const accountService = {
     deleteAccount: (id) => axios.delete(`${API}/account/${id}`),
 };
 
-// Dòng này là quan trọng nhất để fix lỗi trắng trang
+
 export default accountService;

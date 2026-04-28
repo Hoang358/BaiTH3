@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using backend.Models; // Sửa từ NovaApi thành backend
+using backend.Models; 
 
 namespace backend.Data {
     public class AppDbContext : DbContext {

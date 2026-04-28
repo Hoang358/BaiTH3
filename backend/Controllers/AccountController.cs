@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using backend.Data;   // Sử dụng namespace backend mới
-using backend.Models; // Sử dụng namespace backend mới
+using backend.Data;   
+using backend.Models; 
 
 namespace backend.Controllers
 {
@@ -30,7 +30,7 @@ namespace backend.Controllers
             _context.TradingAccounts.Add(account);
             await _context.SaveChangesAsync();
             
-            // Trả về tài khoản vừa tạo kèm ID đã được DB cấp
+
             return Ok(account);
         }
 
@@ -47,7 +47,7 @@ namespace backend.Controllers
             _context.TradingAccounts.Remove(account);
             await _context.SaveChangesAsync();
 
-            return NoContent(); // Trả về 204 No Content nếu xóa thành công
+            return NoContent(); 
         }
     }
 }
